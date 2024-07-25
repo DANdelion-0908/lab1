@@ -20,7 +20,7 @@ fn main() {
     let color3 = Color::from_hex(0x0000FF); // Blue
     let color4 = Color::from_hex(0x00FF00); // Green
     let color5 = Color::from_hex(0x000000); // Black
-    let border = Color::from_hex(0xFFFFFF); // White
+    let border = Color::from_rgb(0, 0, 0); // White
 
     let poly1: Vec<(usize, usize)> = vec![
         (165, 380), 
