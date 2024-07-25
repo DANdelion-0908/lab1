@@ -20,9 +20,8 @@ impl Framebuffer {
     }
 
     pub fn clear(&mut self) {
-        let bg_color = self.background_color.to_hex();
         for pixel in self.buffer.iter_mut() {
-            *pixel = bg_color;
+            *pixel = self.background_color.to_hex();
         }
     }
 

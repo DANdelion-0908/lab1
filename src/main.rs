@@ -15,12 +15,12 @@ fn main() {
     framebuffer.set_background_color(Color::from_hex(0x000000));
     framebuffer.clear();
 
-    let color1 = Color::from_hex(0xFFFF00); // Yellow
-    let color2 = Color::from_hex(0x0000FF); // Blue
-    let color3 = Color::from_hex(0xFF0000); // Red
+    let color1 = Color::from_hex(0x00FFFF); // Yellow
+    let color2 = Color::from_hex(0xFF0000); // Red
+    let color3 = Color::from_hex(0x0000FF); // Blue
     let color4 = Color::from_hex(0x00FF00); // Green
     let color5 = Color::from_hex(0x000000); // Black
-    let border: Color = Color::from_hex(0x000000); // White
+    let border = Color::from_hex(0xFFFFFF); // White
 
     let poly1: Vec<(usize, usize)> = vec![
         (165, 380), 
