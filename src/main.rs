@@ -17,9 +17,6 @@ fn main() {
 
     let color1 = Color::from_hex(0x00FFFF); // Yellow
     let color2 = Color::from_hex(0xFF0000); // Red
-    let color3 = Color::from_hex(0x0000FF); // Blue
-    let color4 = Color::from_hex(0x00FF00); // Green
-    let color5 = Color::from_hex(0x000000); // Black
     let border = Color::from_hex(0xFFFFFF); // White
 
     let poly1: Vec<(usize, usize)> = vec![
@@ -42,45 +39,8 @@ fn main() {
         (374, 302)
     ];
 
-    let poly3: Vec<(usize, usize)> = vec![
-        (377, 249),
-        (411, 197),
-        (436, 249)
-    ];
-
-    let poly4: Vec<(usize, usize)> = vec![
-        (413, 177),
-        (448, 159),
-        (502, 88),
-        (553, 53),
-        (535, 36),
-        (676, 37),
-        (660, 52),
-        (750, 145),
-        (761, 179),
-        (672, 192),
-        (659, 214),
-        (615, 214),
-        (632, 230),
-        (580, 230),
-        (597, 215),
-        (552, 214),
-        (517, 144),
-        (466, 180)
-    ];
-
-    let poly5: Vec<(usize, usize)> = vec![
-        (682, 175),
-        (708, 120),
-        (735, 148),
-        (739, 170)
-    ];
-
     framebuffer.polygon(&poly1, color1, border);
     framebuffer.polygon(&poly2, color2, border);
-    framebuffer.polygon(&poly3, color3, border);
-    framebuffer.polygon(&poly4, color4, border);
-    framebuffer.polygon(&poly5, color5, border);
 
     let _ = framebuffer.render_buffer("output.bmp");
 
